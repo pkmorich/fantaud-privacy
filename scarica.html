@@ -57,7 +57,6 @@
     background: var(--card); border: 1px solid var(--line);
     border-radius: 16px; padding: 20px; margin-bottom: 16px;
   }
-  .card.first { order: -1; border-color: var(--gold); }
   .stack { display: flex; flex-direction: column; }
   h2 { font-size: 18px; margin: 0 0 4px; }
   .sub { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
@@ -94,15 +93,9 @@
   <p class="tagline">Crea la squadra, sfida gli amici, scala la classifica.</p>
 
   <div class="stack">
-    <section class="card" id="ios">
-      <h2>iPhone</h2>
-      <p class="sub">Gratis su App Store.</p>
-      <a class="btn" href="https://apps.apple.com/it/app/fanta-uomini-e-donne/id6806315458">Scarica su App Store</a>
-    </section>
-
     <section class="card" id="android">
       <h2>Android</h2>
-      <p class="sub">In anteprima per un gruppo di tester: dopo l'anteprima sarà gratis anche su Android. Bastano tre passaggi, dura un minuto.</p>
+      <p class="sub">In anteprima per un gruppo di tester: dopo l'anteprima sarà disponibile per tutti. Bastano tre passaggi, dura un minuto.</p>
       <ol>
         <li>
           <strong>Entra nel gruppo tester</strong>
@@ -123,6 +116,12 @@
       <p class="note"><b>Resta iscritto per almeno 14 giorni:</b> ci aiuta a pubblicare l'app per tutti.</p>
       <p class="note" style="margin-top:12px;"><b>Il link non funziona?</b> Se arrivi da Instagram, tocca ⋯ in alto e scegli "Apri nel browser". Serve un account Google personale, non uno di lavoro o scuola.</p>
     </section>
+
+    <section class="card" id="ios">
+      <h2>iPhone</h2>
+      <p class="sub">Gratis su App Store.</p>
+      <a class="btn" href="https://apps.apple.com/it/app/fanta-uomini-e-donne/id6806315458">Scarica su App Store</a>
+    </section>
   </div>
 
   <footer>
@@ -130,14 +129,5 @@
     <a href="./privacy-policy.html">Privacy</a> · <a href="./support.html">Assistenza</a>
   </footer>
 </main>
-<script>
-  // Sui dispositivi Apple mette in evidenza iPhone, su Android la sezione Android.
-  (function () {
-    var ua = navigator.userAgent || "";
-    var id = /Android/i.test(ua) ? "android" : /iPhone|iPad|iPod/i.test(ua) ? "ios" : null;
-    var el = id && document.getElementById(id);
-    if (el) el.classList.add("first");
-  })();
-</script>
 </body>
 </html>
