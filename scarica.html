@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scarica Fanta Uomini e Donne</title>
+<meta name="description" content="Crea la tua squadra, sfida gli amici, scala la classifica. Gratis su iPhone, Android in anteprima.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6EFE3;
+    --card: #FFFFFF;
+    --ink: #1B1420;
+    --muted: #6B6072;
+    --gold: #B8902F;
+    --gold-ink: #1B1420;
+    --red: #B3202F;
+    --line: #E4D9C4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F0A14;
+      --card: #1A1322;
+      --ink: #F6EFE3;
+      --muted: #A99DB0;
+      --gold: #D8B25A;
+      --gold-ink: #1B1420;
+      --red: #E0505E;
+      --line: #2E2338;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+  main { max-width: 480px; margin: 0 auto; padding: 32px 16px 40px; }
+  .crown {
+    width: 72px; height: 72px; border-radius: 50%;
+    display: grid; place-items: center; font-size: 34px;
+    background: var(--card); border: 1px solid var(--line);
+    margin: 0 auto 16px;
+  }
+  h1 {
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-weight: 700; font-size: 30px; line-height: 1.15;
+    text-align: center; margin: 0 0 8px;
+  }
+  .tagline { text-align: center; color: var(--muted); margin: 0 0 28px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 20px; margin-bottom: 16px;
+  }
+  .card.first { order: -1; border-color: var(--gold); }
+  .stack { display: flex; flex-direction: column; }
+  h2 { font-size: 18px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+  .btn {
+    display: block; text-align: center; text-decoration: none;
+    background: var(--gold); color: var(--gold-ink);
+    font-weight: 700; padding: 14px 16px; border-radius: 12px;
+    margin-top: 12px;
+  }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--gold); }
+  ol { padding-left: 0; margin: 0; list-style: none; counter-reset: s; }
+  ol > li { counter-increment: s; margin-bottom: 18px; padding-left: 36px; position: relative; }
+  ol > li::before {
+    content: counter(s); position: absolute; left: 0; top: 0;
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--gold); color: var(--gold-ink);
+    font-weight: 700; font-size: 14px; display: grid; place-items: center;
+  }
+  ol > li strong { display: block; }
+  ol > li span { color: var(--muted); font-size: 14px; }
+  .note {
+    font-size: 14px; color: var(--muted);
+    border-left: 3px solid var(--red); padding: 4px 0 4px 12px; margin: 4px 0 0;
+  }
+  .note b { color: var(--ink); }
+  footer { text-align: center; font-size: 12px; color: var(--muted); margin-top: 28px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="crown" aria-hidden="true">👑</div>
+  <h1>Fanta Uomini e Donne</h1>
+  <p class="tagline">Crea la squadra, sfida gli amici, scala la classifica.</p>
+
+  <div class="stack">
+    <section class="card" id="ios">
+      <h2>iPhone</h2>
+      <p class="sub">Gratis su App Store.</p>
+      <a class="btn" href="https://apps.apple.com/it/app/fanta-uomini-e-donne/id6806315458">Scarica su App Store</a>
+    </section>
+
+    <section class="card" id="android">
+      <h2>Android</h2>
+      <p class="sub">In anteprima per un gruppo di tester. Bastano tre passaggi, dura un minuto.</p>
+      <ol>
+        <li>
+          <strong>Entra nel gruppo tester</strong>
+          <span>Con l'account Google personale che usi sul Play Store.</span>
+          <a class="btn ghost" href="https://groups.google.com/g/fantaud-tester">Unisciti al gruppo</a>
+        </li>
+        <li>
+          <strong>Diventa tester</strong>
+          <span>Apri il link e tocca "Diventa tester".</span>
+          <a class="btn ghost" href="https://play.google.com/apps/testing/com.fantaud.fanta_ud">Attiva l'accesso</a>
+        </li>
+        <li>
+          <strong>Installa l'app</strong>
+          <span>Dal Play Store, come qualsiasi altra app.</span>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.fantaud.fanta_ud">Apri su Play Store</a>
+        </li>
+      </ol>
+      <p class="note"><b>Resta iscritto per almeno 14 giorni:</b> ci aiuta a pubblicare l'app per tutti.</p>
+      <p class="note" style="margin-top:12px;"><b>Il link non funziona?</b> Se arrivi da Instagram, tocca ⋯ in alto e scegli "Apri nel browser". Serve un account Google personale, non uno di lavoro o scuola.</p>
+    </section>
+  </div>
+
+  <footer>
+    Fanta Uomini e Donne è un gioco non ufficiale, non affiliato né approvato da Mediaset.<br>
+    <a href="./privacy-policy.html">Privacy</a> · <a href="./support.html">Assistenza</a>
+  </footer>
+</main>
+<script>
+  // Sui dispositivi Apple mette in evidenza iPhone, su Android la sezione Android.
+  (function () {
+    var ua = navigator.userAgent || "";
+    var id = /Android/i.test(ua) ? "android" : /iPhone|iPad|iPod/i.test(ua) ? "ios" : null;
+    var el = id && document.getElementById(id);
+    if (el) el.classList.add("first");
+  })();
+</script>
+</body>
+</html>
